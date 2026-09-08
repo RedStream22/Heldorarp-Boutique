@@ -1,0 +1,1 @@
+function buy(product){document.getElementById("modalTitle").textContent=product;document.getElementById("modal").classList.add("show")}function closeModal(){document.getElementById("modal").classList.remove("show")}document.getElementById("modal").addEventListener("click",e=>{if(e.target.id==="modal")closeModal()})

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HeldoraRP — Boutique</title>
+<meta name="description" content="Boutique officielle HeldoraRP">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html"><span class="brand-dot"></span>Heldora<span>RP</span></a>
+  <nav>
+    <a href="#boutique">Boutique</a>
+    <a href="#avantages">Avantages</a>
+    <a href="#faq">FAQ</a>
+    <a class="discord" href="#" onclick="return false;">Discord</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <div class="badge">BOUTIQUE OFFICIELLE</div>
+    <h1>Améliore ton<br><span>expérience RP.</span></h1>
+    <p>Découvre les offres exclusives d'HeldoraRP et profite d'avantages supplémentaires en jeu.</p>
+    <a class="primary" href="#boutique">Voir la boutique <b>↓</b></a>
+  </div>
+  <div class="hero-card">
+    <div class="mini-label">HELDORARP</div>
+    <div class="big-vip">VIP</div>
+    <div class="line"></div>
+    <div class="mini-text">Des avantages exclusifs<br>pour ton expérience RP.</div>
+  </div>
+</section>
+
+<section id="boutique" class="section">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">NOS OFFRES</div>
+      <h2>Choisis ton <span>grade.</span></h2>
+    </div>
+    <p>Les achats sont associés à ton compte de jeu.</p>
+  </div>
+
+  <div class="cards">
+    <article class="card">
+      <div class="card-top"><span class="pill green">VIP</span><span class="price">5,99€</span></div>
+      <h3>VIP</h3>
+      <p>Profite d'un statut exclusif et d'avantages réservés aux membres VIP.</p>
+      <ul>
+        <li>Grade VIP en jeu</li>
+        <li>Avantages exclusifs</li>
+        <li>Accès aux fonctionnalités VIP</li>
+        <li>Support prioritaire</li>
+      </ul>
+      <button class="buy" onclick="buy('VIP')">Acheter le VIP <span>→</span></button>
+    </article>
+
+    <article class="card featured">
+      <div class="popular">LE PLUS POPULAIRE</div>
+      <div class="card-top"><span class="pill purple">VIP PREMIUM</span><span class="price">9,99€</span></div>
+      <h3>VIP Premium</h3>
+      <p>Le grade premium pour profiter d'une expérience encore plus complète.</p>
+      <ul>
+        <li>Tous les avantages VIP</li>
+        <li>Grade VIP Premium en jeu</li>
+        <li>Avantages Premium exclusifs</li>
+        <li>Support prioritaire</li>
+      </ul>
+      <button class="buy premium" onclick="buy('VIP Premium')">Acheter le Premium <span>→</span></button>
+    </article>
+  </div>
+</section>
+
+<section id="avantages" class="dark-section">
+  <div class="eyebrow">HELDORARP</div>
+  <h2>Une boutique pensée pour le <span>RP.</span></h2>
+  <div class="features">
+    <div><strong>01</strong><h3>Simple</h3><p>Une boutique claire et rapide, pensée pour les joueurs.</p></div>
+    <div><strong>02</strong><h3>Sécurisé</h3><p>Le paiement sera effectué via un prestataire de paiement adapté.</p></div>
+    <div><strong>03</strong><h3>Automatique</h3><p>La livraison du grade pourra être automatisée avec ton serveur.</p></div>
+  </div>
+</section>
+
+<section id="faq" class="section faq">
+  <div class="eyebrow">QUESTIONS</div>
+  <h2>FAQ</h2>
+  <details><summary>Quand vais-je recevoir mon grade ?</summary><p>Une fois le paiement validé, la livraison automatique sera effectuée lorsque la boutique sera connectée à ton serveur.</p></details>
+  <details><summary>Comment associer mon compte Steam ?</summary><p>La connexion Steam sera ajoutée lors de la mise en place du système de paiement et de livraison.</p></details>
+  <details><summary>Les avantages peuvent-ils changer ?</summary><p>Oui. Les avantages affichés sur la boutique pourront être modifiés par l'administration du serveur.</p></details>
+</section>
+</main>
+
+<footer>
+  <div class="brand"><span class="brand-dot"></span>Heldora<span>RP</span></div>
+  <p>© 2026 HeldoraRP — Tous droits réservés.</p>
+</footer>
+
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <button class="close" onclick="closeModal()">×</button>
+    <div class="eyebrow">ACHAT</div>
+    <h2 id="modalTitle">VIP</h2>
+    <p>Le paiement n'est pas encore connecté. Cette page est prête à recevoir ton lien de paiement.</p>
+    <div class="notice">⚙️ Prochaine étape : connecter le moyen de paiement et l'attribution automatique du grade.</div>
+    <button class="buy" onclick="closeModal()">Fermer</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
